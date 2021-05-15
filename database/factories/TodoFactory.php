@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class TodoFactory extends Factory
 {
     /**
-     * The name of the factory's corresponding model.
+     * The title of the factory's corresponding model.
      *
      * @var string
      */
@@ -22,7 +22,7 @@ class TodoFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->text(100),
+            'title' => $this->faker->text(100),
             'date' => $this->faker->dateTimeThisMonth(),
             'created_at' => now(),
             'updated_at' => now(),
